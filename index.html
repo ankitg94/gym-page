@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>harry-fitness</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Rubik:wght@600&display=swap"
+         rel="stylesheet">
+        <style>
+        body{
+            background: url('img/gym8.jpg');
+            width:1254px;
+            height:874px;
+        }
+        .left{
+            display:inline-block;
+           /* border:2px solid red;*/
+            position:absolute;
+            left:60px;
+            top:20px;
+        }
+        .left img{
+            width:35px;
+            height:35px; 
+            float:left;       
+        }
+        .left div{
+            line-height:19px;
+            font-size:24px;
+            text-align:center;
+            float:left;
+            border:2px solid black;
+            padding:2px 2px 2px 2px;
+
+        }
+        .mid{
+            /*border:2px solid green;*/
+            display:block;
+            width:53%;
+            margin:0px auto;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+        .right{
+            position:absolute;
+            right:10px;
+            top:8px;
+            display:inline-block;
+           /* border: 2px solid blue;*/
+        }
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            display:inline-block;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            font-size:20px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration:underline;
+            color:grey;
+        }
+        .btn{
+            margin:10px 30px 30px 20px;
+            color:white;
+            background-color:black;
+            border-radius:3px;  
+           /* padding:4px 4px 0px 2px;*/
+            font-size:15px;   
+            height:30px;
+            width:80px;
+            cursor:pointer;
+        }
+        .btn:hover{
+             background-color:grey;
+        }
+        .container{
+            border:2px solid black;
+            margin:100px 80px;
+            padding:12px 15px;
+            width:30%;
+            height:30%;
+            border-radius:25px;
+        }
+        .form-group input{
+            display:block;
+            width:240px;
+            padding:4px;
+            border:2px solid black;
+            margin:5px auto;
+            border-radius:4px;
+        }
+        .btn-s{
+            background-color:white;
+            margin-left:130px;
+            font-size:20px;
+            border-radius:4px;
+        }
+        .container h1{
+            text-align:center;
+        }
+        </style>
+    </head>
+    <body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+         <img src="img/png.png" alt="logo" >
+         <div>Harry Fitness</div>   
+        </div>
+        <!--mid bar nav-->
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">fit-mantra</a></li>
+            <li><a href="#">contact</a><li>
+            <li><a href="#">B-M-I </a><li>                          
+        </div>
+        <!--right box for search-->
+        <div class="right">
+        <button class="btn">Call...</button>
+        <button class="btn">E-mail</button>
+        </div>       
+    </header>
+    <hr>
+    <div class="container">
+    <h1>Join the best gym now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+           <input type="text" name="" placeholder="Name">
+           <input type="text"  name="" placeholder="Email">
+           <input type="number" name="" placeholder="Mobile.no">
+           <button class="btn-s"> Submit</button><br>
+        
+        
+        
+        
+        </div>
+    </form>
+    </div>    
+    </body>
+</html>
